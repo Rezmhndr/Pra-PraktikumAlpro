@@ -34,3 +34,20 @@ int main()
 	cout<<"Pilih Menu No    : ";cin>>m;
 	cout<<"Bilangan Pertama : ";cin>>angka1;
 	cout<<"Bilangan Kedua   : ";cin>>angka2;
+	if (m == 1){
+		cout<<"Hasil "<<angka1<<" + "<<angka2<<" = "<<tambah(angka1, angka2);
+	}
+	else if (m == 2){
+		cout<<"Hasil "<<angka1<<" - "<<angka2<<" = "<<kurang(angka1, angka2);
+	}
+	else if (m == 3){
+		cout<<"Hasil "<<angka1<<" * "<<angka2<<" = "<<kali(angka1, angka2);
+	}
+	else if (m == 4){
+		cout<<"Hasil "<<angka1<<" / "<<angka2<<" = "<<bagi(angka1, angka2);
+	}
+	else{
+		cout<<"Program Berakhir";
+	}
+	return 0;
+}
